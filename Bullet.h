@@ -14,6 +14,7 @@ public:
 	void SetIsShot(bool isShot) { isShot_ = isShot; }
 	void SetBullet(Vector2 bullet) { bullet_.position = bullet; }
 	Transform GetBullet() { return bullet_; }
+	bool GetIsShot() { return isShot_; }
 
 private:
 	Transform bullet_;

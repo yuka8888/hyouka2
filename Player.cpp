@@ -47,7 +47,7 @@ int Player::Update(char* keys, char* preKeys) {
 
 
 	//弾の発射
-	if (keys[DIK_SPACE] && preKeys[DIK_SPACE] == 0) {
+	if (keys[DIK_SPACE] && preKeys[DIK_SPACE] == 0 && bullet_->GetIsShot() == false) {
 		bullet_->SetBullet(player_.position);
 		bullet_->SetIsShot(true);
 	}
